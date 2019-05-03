@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.cts.chargeback.service.CustomerServiceImpl" x="409" y="115">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.cts.chargeback.service.CustomerService"/>
+        <Association
+            destinationClassName="com.cts.chargeback.dao.CustomerDAO"
+            endpointName="customerDAO" kind="Simple"/>
+        <Communication destinationClassName="com.cts.chargeback.dao.CustomerDAO"/>
+    </Class>
+    <Class name="com.cts.chargeback.dao.CustomerDAOImpl" x="773" y="181">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.cts.chargeback.dao.CustomerDAO"/>
+    </Class>
+    <Class name="com.cts.chargeback.dao.UserDAOImpl" x="831" y="491">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.cts.chargeback.dao.UserDAO"/>
+    </Class>
+    <Class name="com.cts.chargeback.controller.CustomerContoller" x="21" y="34">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.cts.chargeback.service.CustomerService"
+            endpointName="customerService" kind="Simple"/>
+        <Association
+            destinationClassName="com.cts.chargeback.service.UserService"
+            endpointName="userService" kind="Simple"/>
+        <Communication destinationClassName="com.cts.chargeback.service.CustomerService"/>
+        <Communication destinationClassName="com.cts.chargeback.service.UserService"/>
+    </Class>
+    <Class name="com.cts.chargeback.service.CustomerService" x="363" y="-3">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.cts.chargeback.dao.UserDAO" x="740" y="375">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.cts.chargeback.dao.CustomerDAO" x="677" y="-20">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.cts.chargeback.service.UserService" x="372" y="222">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.cts.chargeback.controller.MainController" x="20" y="218">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.cts.chargeback.controller.UserController" x="60" y="296">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.cts.chargeback.service.UserService"
+            endpointName="userService" kind="Simple"/>
+        <Communication destinationClassName="com.cts.chargeback.service.UserService"/>
+    </Class>
+    <Class name="com.cts.chargeback.service.UserDetailsServiceImpl"
+        x="378" y="440">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.cts.chargeback.dao.UserDAO"
+            endpointName="userDAO" kind="Simple">
+            <Point x="674" y="450"/>
+        </Association>
+        <Communication destinationClassName="com.cts.chargeback.dao.UserDAO"/>
+    </Class>
+    <Class name="com.cts.chargeback.service.UserServiceImpl" x="463" y="314">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.cts.chargeback.service.UserService"/>
+        <Association
+            destinationClassName="com.cts.chargeback.dao.UserDAO"
+            endpointName="userDAO" kind="Simple">
+            <Point x="671" y="395"/>
+        </Association>
+        <Communication destinationClassName="com.cts.chargeback.dao.UserDAO"/>
+    </Class>
+</ClassDiagram>
